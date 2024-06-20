@@ -1,94 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Keywords" content="HTML,Portfolio" />
+    <meta name="Description" content="Nayeem Hossen Jim" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        body
+        {
+            background-color:rgb(221, 203, 181);
+            font-family: "Satisfy", cursive;
+        }
+    </style>
+  </head>
+  <body>
     <nav>
-        <ol>
-            
-            <li><a href="#about"><img src="Jim.jpg" alt="Profile Pic" height="150" width="150"></a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ol>
+      <ol>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ol>
     </nav>
-    <header >
-        <H1>Nayeem Hossen Jim</H1>
-        <p> <em>Game & Web Develope</em> </p>
-        <p>A passionate game developer eager to learn the process.So we can bring a numerous number of open world AAA title game</p>
-        <hr>
+    <header>
+      <img src="Jim.jpg" alt="Profile Pic" height="150" width="150" />
+      <h1>Nayeem Hossen Jim</h1>
+      <p><em>Game & Web Developer</em></p>
+      <p>
+        A passionate game developer eager to learn the process.So we can bring a
+        numerous number of open world AAA title game
+      </p>
+      <hr />
     </header>
 
     <!--Educational BacKGround-->
     <section id="about">
-        <h2>About Me</h2>
-        <p><strong>Education :</strong> Studies B.Sc in CSE at Uttara University</p>
+      <h2>About Me</h2>
+      <p>
+        <strong>Education :</strong> Studies B.Sc in CSE at Uttara University
+      </p>
     </section>
 
     <!--Skill Section-->
     <section id="skills">
-        <h3>Skills</h3>
-        <ol type="A">
-            <li>
-                Language
-                <ul type="square">
-                    <li>C++</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                </ul>
-            </li>
-            <li>
-                Game Development
-                <ul type="square">
-                    <li>Unreal Engine 5</li>
-                    <li>Unity</li>
-                    <li>GODOT</li>
-                </ul>
-            </li>
-        </ol>
-    </section>
+      <h3>Skills</h3>
+      <ol type="A">
+        <li>
+          Language
+          <ul type="square">
+            <li>C++</li>
+            <li>C#</li>
+            <li>Python</li>
+          </ul>
+        </li>
+        <li>
+          Game Development
+          <ul type="square">
+            <li>Unreal Engine 5</li>
+            <li>Unity <i class="fa-brands fa-unity"></i></li>
+            <li>GODOT</li>
+          </ul>
+        </li>
+      </ol>
 
+      <h3>Learning Progress</h3>
+      <div>
+        <label for="ue5">Unreal Engine</label>
+        <progress id="ue5" value="35" max="100">35%</progress>
+      </div>
+
+      <div>
+        <label for="Unity">Unity</label>
+        <progress id="Unity" value="15" max="100">15%</progress>
+      </div>
+
+      <div>
+        <label for="godot">GODOT</label>
+        <progress id="godot" value="5" max="100">5%</progress>
+      </div>
+
+      <h3>Experience</h3>
+      <meter value="2" max="10">2 years of Experience</meter>
+    </section>
+    <hr>
+
+    <!--Table Section-->
     <table border="1">
-        <thead>
-            <tr>
-                <td>Name</td>
-                <td>Skills</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nayeem</td>
-                <td>Game</td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Skills</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nayeem</td>
+          <td>Game</td>
+        </tr>
+      </tbody>
     </table>
 
-    <form>
-        <div>
-            <label for="name">Name _:</label>
-            <input type="text" id="name" name="name">
-        </div>
+    <!--Follow Section-->
+    <h3>Follow Me</h3>
+    <ul>
+      <li>
+        <a
+          href="https://github.com/NayeemHossenJim"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-github"></i>
+          ~ My GitHub
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.facebook.com/profile.php?id=61556279152512"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+          ~ My FaceBook
+        </a>
+      </li>
+    </ul>
+    <!--Form Section-->
+    <form action="https://formspree.io/f/xgvwwegz" method="POST">
+      <div>
+        <label for="name">Name ____:</label>
+        <input type="text" id="name" name="name" />
+      </div>
 
-        <div>
-            <label for="email">Email _: </label>
-            <input type="text" id="email" name="email">
-        </div>
+      <div>
+        <label for="email">Email ____: </label>
+        <input type="text" id="email" name="email" />
+      </div>
 
-        <div>
-            <label for="Message">Message</label>
-            <textarea name="Message" id="Message"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+      <div>
+        <label for="password">Password : </label>
+        <input type="password" id="email" name="paasword" />
+      </div>
+
+      <div>
+        <label for="Message">Message__: </label>
+        <textarea name="Message" id="Message"></textarea>
+      </div>
+
+      <div>
+        <label for="age">Age _____: </label>
+        <input type="number" id="age" name="age" min="16" required />
+      </div>
+
+      <div>
+        <label for="file">File____: </label>
+        <input type="file" id="file" name="file" />
+      </div>
+
+      <div>
+        <label for="gender">Gender _: </label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
-    <Footer id="contact">
-        <h4>Contact Me</h4>
-        <p>All Copyrights Reserved &copy; By SkeletalMesh Studios</p>
-        <hr>
-        <a href="tel:01631123854">Call Me</a>
-        <a href="mailto:nayeemhossenjim@gmail.com">Email Me</a>
-    </Footer>
-</body>
+
+    <!--Contact Section-->
+    <footer id="contact">
+      <h4>Contact Me</h4>
+      <p>All Copyrights Reserved &copy; By SkeletalMesh Studios</p>
+      <hr />
+      <a href="tel:01631123854">Call Me</a>
+      <a href="mailto:nayeemhossenjim@gmail.com">Email Me</a>
+    </footer>
+  </body>
 </html>
