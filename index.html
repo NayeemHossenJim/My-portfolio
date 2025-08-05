@@ -1,197 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="Keywords" content="HTML,Portfolio" />
-    <meta name="Description" content="Nayeem Hossen Jim" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        background-color: rgb(221, 203, 181);
-        font-family: "Satisfy", cursive;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <ol>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">My Skills</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ol>
-    </nav>
-    <header>
-      <img src="Jim.jpg" alt="Profile Pic" height="150" width="150" />
-      <h1>Nayeem Hossen Jim</h1>
-      <p><em>Game & Web Developer</em></p>
-      <p>
-        A passionate game developer eager to learn the process.So we can bring a
-        numerous number of open world AAA title game
-      </p>
-      <hr />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayeem Hossen Jim – Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h1 class="name">Nayeem Hossen Jim</h1>
+            <p class="tagline">Machine Learning Engineer &amp; Game Developer</p>
+            <p class="bio">
+                ML Engineer · Game Developer · Building intelligent systems &amp; interactive experiences · Focused on AI, design and real‑world impact
+            </p>
+            <a href="https://github.com/NayeemHossenJim" class="btn" target="_blank" rel="noopener">View GitHub Profile</a>
+        </div>
     </header>
 
-    <!--Educational BacKGround-->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        <strong>Education :</strong> Studies B.Sc in CSE at Uttara University
-      </p>
+    <!-- Projects section -->
+    <section class="projects">
+        <div class="container">
+            <h2>Highlighted Projects</h2>
+            <div class="project-grid">
+                <!-- Machine Learning -->
+                <article class="project-card">
+                    <img src="ML.jpg" alt="Abstract neural network illustration representing machine learning" class="project-image">
+                    <div class="project-body">
+                        <h3>Machine‑Learning</h3>
+                        <p class="project-lang">Python</p>
+                        <p class="project-description">
+                            A production‑grade machine learning portfolio covering fundamentals to advanced topics – from data manipulation
+                            and analysis to classical algorithms, deep learning and API development.
+                        </p>
+                        <a href="https://github.com/NayeemHossenJim/Machine-Learning" class="project-link" target="_blank" rel="noopener">Explore&nbsp;Repository</a>
+                    </div>
+                </article>
+                <!-- AI Enemy Boss -->
+                <article class="project-card">
+                    <img src="AI Boss.png" alt="Dark fantasy boss standing in a dungeon" class="project-image">
+                    <div class="project-body">
+                        <h3>AI&nbsp;Enemy&nbsp;Boss</h3>
+                        <p class="project-lang">Unreal Engine&nbsp;5 / Blueprint</p>
+                        <p class="project-description">
+                            An AI‑driven boss fight system with dynamic enemy behaviours, adaptive combat, spell casting and immersive
+                            gameplay – built entirely with Unreal Engine 5’s Blueprint system.
+                        </p>
+                        <a href="https://github.com/NayeemHossenJim/AI_Enemy_Boss" class="project-link" target="_blank" rel="noopener">Explore&nbsp;Repository</a>
+                    </div>
+                </article>
+                <!-- Deep Learning -->
+                <article class="project-card">
+                    <img src="NN.jpg" alt="Digital brain representing deep learning" class="project-image">
+                    <div class="project-body">
+                        <h3>Deep‑Learning</h3>
+                        <p class="project-lang">Jupyter&nbsp;Notebook / Python</p>
+                        <p class="project-description">
+                            Digit recognition project using convolutional neural networks. The notebook walks through data preprocessing,
+                            model training, evaluation and visualisation.
+                        </p>
+                        <a href="https://github.com/NayeemHossenJim/Deep-Learning" class="project-link" target="_blank" rel="noopener">Explore&nbsp;Repository</a>
+                    </div>
+                </article>
+                <!-- Heroes Never Die -->
+                <article class="project-card">
+                    <img src="Hero Never Die.png" alt="Fantasy heroes standing before ruins" class="project-image">
+                    <div class="project-body">
+                        <h3>Heroes‑Never‑Die</h3>
+                        <p class="project-lang">Unity / C#</p>
+                        <p class="project-description">
+                            Unity‑based game developed for BUET Game Jam. Guide the hero on a quest to rescue a princess from the
+                            Skeleton King – complete with intuitive controls and an engaging storyline.
+                        </p>
+                        <a href="https://github.com/NayeemHossenJim/Heroes-Never-Die" class="project-link" target="_blank" rel="noopener">Explore&nbsp;Repository</a>
+                    </div>
+                </article>
+                <!-- Jarvis -->
+                <article class="project-card">
+                    <img src="jarvis.jpg" alt="Glowing microphone icon representing a voice assistant" class="project-image">
+                    <div class="project-body">
+                        <h3>Jarvis</h3>
+                        <p class="project-lang">Python</p>
+                        <p class="project-description">
+                            A Python voice assistant that listens, speaks and acts. Using speech recognition and text‑to‑speech, Jarvis
+                            can open websites, play music, fetch news and handle custom commands.
+                        </p>
+                        <a href="https://github.com/NayeemHossenJim/Jarvis" class="project-link" target="_blank" rel="noopener">Explore&nbsp;Repository</a>
+                    </div>
+                </article>
+                <!-- The Last Gods -->
+                <article class="project-card">
+                    <img src="God.png" alt="Adventurer exploring ancient ruins" class="project-image">
+                    <div class="project-body">
+                        <h3>The&nbsp;Last&nbsp;Gods</h3>
+                        <p class="project-lang">C++ / Unreal Engine</p>
+                        <p class="project-description">
+                            Epic adventure game built with Unreal Engine. Featuring high‑quality visuals, dynamic gameplay, expansive
+                            worlds and a modular codebase for easy extensibility.
+                        </p>
+                        <a href="https://github.com/NayeemHossenJim/The_Last_Gods" class="project-link" target="_blank" rel="noopener">Explore&nbsp;Repository</a>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
-    <!--Skill Section-->
-    <section id="skills">
-      <h3>Skills</h3>
-      <ol type="A">
-        <li>
-          Language
-          <ul type="square">
-            <li>C++</li>
-            <li>C#</li>
-            <li>Python</li>
-          </ul>
-        </li>
-        <li>
-          Game Development
-          <ul type="square">
-            <li>Unreal Engine 5</li>
-            <li>Unity <i class="fa-brands fa-unity"></i></li>
-            <li>GODOT</li>
-          </ul>
-        </li>
-      </ol>
-
-      <h3>Learning Progress</h3>
-      <div>
-        <label for="ue5">Unreal Engine</label>
-        <progress id="ue5" value="35" max="100">35%</progress>
-      </div>
-
-      <div>
-        <label for="Unity">Unity</label>
-        <progress id="Unity" value="15" max="100">15%</progress>
-      </div>
-
-      <div>
-        <label for="godot">GODOT</label>
-        <progress id="godot" value="5" max="100">5%</progress>
-      </div>
-
-      <h3>Experience</h3>
-      <meter value="2" max="10">2 years of Experience</meter>
-    </section>
-    <hr />
-
-    <!--Table Section-->
-    <table border="1">
-      <thead>
-        <tr>
-          <td>Name</td>
-          <td>Skills</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Nayeem</td>
-          <td>Game</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!--Follow Section-->
-    <h3>Follow Me</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/NayeemHossenJim"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fa-brands fa-github"></i>
-          ~ My GitHub
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.facebook.com/profile.php?id=61556279152512"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fa-brands fa-facebook-f"></i>
-          ~ My FaceBook
-        </a>
-      </li>
-    </ul>
-    <!--Form Section-->
-    <form action="https://formspree.io/f/xgvwwegz" method="POST">
-      <div>
-        <label for="name">Name ____:</label>
-        <input type="text" id="name" name="name" />
-      </div>
-
-      <div>
-        <label for="email">Email ____: </label>
-        <input type="text" id="email" name="email" />
-      </div>
-
-      <div>
-        <label for="password">Password : </label>
-        <input
-          type="password"
-          id="password"
-          name="paasword"
-          autocomplete="family-name"
-        />
-      </div>
-
-      <div>
-        <label for="Message">Message__: </label>
-        <textarea name="Message" id="Message"></textarea>
-      </div>
-
-      <div>
-        <label for="age">Age _____: </label>
-        <input type="number" id="age" name="age" min="16" required />
-      </div>
-
-      <div>
-        <label for="file">File____: </label>
-        <input type="file" id="file" name="file" />
-      </div>
-
-      <div>
-        <label for="gender">Gender _: </label>
-        <select name="gender" id="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-      </div>
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-    </form>
-
-    <!--Contact Section-->
-    <footer id="contact">
-      <h4>Contact Me</h4>
-      <p>All Copyrights Reserved &copy; By SkeletalMesh Studios</p>
-      <hr />
-      <a href="tel:01631123854">Call Me</a>
-      <a href="mailto:nayeemhossenjim@gmail.com">Email Me</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nayeem Hossen Jim &nbsp;|&nbsp; Built with 💡 using HTML &amp; CSS</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
