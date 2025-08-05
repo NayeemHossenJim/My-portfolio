@@ -1,3 +1,33 @@
+/* Project Row Layout */
+.project-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: stretch;
+}
+
+.project-row .project-card {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .project-row {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .project-row .project-card {
+        max-width: 100%;
+        width: 100%;
+    }
+}
 /* Global Styles */
 :root {
     --primary-bg: #0a0a23;
@@ -59,6 +89,31 @@ img {
     text-align: center;
 }
 
+.contact-info {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.contact-link {
+    display: inline-block;
+    background: transparent;
+    color: var(--text-light);
+    padding: 0.65rem 1.25rem;
+    border: 2px solid var(--text-light);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    background: var(--text-light);
+    color: var(--primary-bg);
+}
+
 .name {
     font-size: 2.75rem;
     margin-bottom: 0.5rem;
@@ -92,6 +147,68 @@ img {
 
 .btn:hover {
     background: #007acc;
+}
+
+/* Skills Section */
+.skills {
+    padding: 3rem 0;
+    background: var(--primary-bg);
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-4px);
+}
+
+.skill-category h3 {
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-weight: 500;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+.skill-category li:before {
+    content: "▸";
+    color: var(--accent);
+    margin-right: 0.5rem;
+    font-weight: bold;
 }
 
 /* Projects Section */
@@ -184,6 +301,16 @@ img {
     border-top: 1px solid #26264d;
 }
 
+.footer-link {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-light);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     .name {
@@ -195,7 +322,18 @@ img {
     .bio {
         font-size: 0.9rem;
     }
-    .projects h2 {
+    .projects h2, .skills h2 {
         font-size: 1.75rem;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .skill-category {
+        padding: 1.5rem;
     }
 }
